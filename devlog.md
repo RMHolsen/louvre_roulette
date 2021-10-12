@@ -14,3 +14,5 @@ Generated front-end with create-react-app
 (App.test.js, logo.svg, reportWebVitals.js, setupTests.js may not be necessary. Leaving them in in case of crisps protocol.)
 Cleared extraneous code and wrote in basic React app code
 Pushed
+Installed redux, react-redux, redux-thunk, react-router-dom
+Pushed

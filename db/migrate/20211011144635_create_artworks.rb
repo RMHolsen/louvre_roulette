@@ -6,7 +6,7 @@ class CreateArtworks < ActiveRecord::Migration[5.0]
       t.string :style # Style of work, e.g. cubism, medieval, post-modern, pointillism
       t.string :subject # Dog, still life, bowl of fruit, dogs playing poker, ballet dancers
       t.string :url # URL
-      t.flaot :hours # Hours spent on work
+      t.float :hours # Hours spent on work
       t.belongs_to :gallery
       t.timestamps
     end

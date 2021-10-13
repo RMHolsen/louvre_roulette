@@ -5,7 +5,7 @@ class GalleriesController < ApplicationController
         # This should work once the helper methods are written to show only the galleries associated with the current user 
         # Will need rewritten to show all public galleries maybe
         # Decide this later, it's a good stand in 
-        @galleries = current_user.galleries 
+        @galleries = Gallery.all 
         render json: @galleries 
     end 
 

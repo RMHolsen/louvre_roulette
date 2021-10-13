@@ -1,5 +1,4 @@
 ## 11 October 2021
-*1.5 code hours*
 Initialized repository
 Created resources for User, Gallery, Artwork
 First commit, pushed to Github
@@ -17,5 +16,8 @@ Pushed
 Installed redux, react-redux, redux-thunk, react-router-dom
 Pushed
 Added file structure for front-end 
+**MIGRATIONS STILL NOT RUN**
 
 ## 13 October 2021
+Ran migrations
+Confirmed front-end/back-end connection, debugged rack-cors initializer (don't forget to uncomment the initializer AND change the example.com. silly woman.)

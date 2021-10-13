@@ -16,3 +16,6 @@ Cleared extraneous code and wrote in basic React app code
 Pushed
 Installed redux, react-redux, redux-thunk, react-router-dom
 Pushed
+Added file structure for front-end 
+
+## 13 October 2021

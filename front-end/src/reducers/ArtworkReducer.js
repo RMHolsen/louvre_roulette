@@ -1,4 +1,7 @@
-export default function artworkReducer(state = { artworks = [] }, action) {
+export default function artworkReducer(state = { artworks: [], }, action) {
     // this is where the case statements go 
-    return state;
+    switch(action.type) {
+        default:
+            return state;
+    }
 }

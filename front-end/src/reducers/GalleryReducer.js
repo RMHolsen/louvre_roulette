@@ -1,4 +1,7 @@
-export default function galleryReducer(state = { galleries = [] }, action) {
+export default function galleryReducer(state = { galleries: [], }, action) {
     // this is where the case statements go 
-    return state;
+    switch(action.type) {
+        default: 
+        return state;
+    }
 }

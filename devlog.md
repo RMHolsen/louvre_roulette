@@ -21,3 +21,6 @@ Added file structure for front-end
 ## 13 October 2021
 Ran migrations
 Confirmed front-end/back-end connection, debugged rack-cors initializer (don't forget to uncomment the initializer AND change the example.com. silly woman.)
+
+## 14 October 2021
+Added middleware, store to index.js

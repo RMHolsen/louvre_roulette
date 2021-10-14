@@ -1,4 +1,6 @@
 class GallerySerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :id, :title, :description, :user_id 
+  has_many :artworks 
 end
+

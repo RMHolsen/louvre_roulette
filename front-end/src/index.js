@@ -4,14 +4,14 @@ import { createStore, applyMiddleware, compose } from 'redux';
 // functions built into redux to make our life easier. allegedly.
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
-import galleryReducer from './reducers/GalleryReducer';
+import GalleriesReducer from './reducers/GalleriesReducer';
 import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-let store = createStore(galleryReducer, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(GalleriesReducer, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
 <Provider store={store}>

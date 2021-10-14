@@ -24,3 +24,4 @@ Confirmed front-end/back-end connection, debugged rack-cors initializer (don't f
 
 ## 14 October 2021
 Added middleware, store to index.js
+Filled out Reducer, Fetch, Container, and Show for Gallery, debugged

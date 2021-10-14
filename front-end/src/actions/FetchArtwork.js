@@ -1,5 +1,5 @@
 export function fetchArtwork(action) {
-    const url = 'http://localhost:3000/'
+    let url = 'http://localhost:3000/'
 
     fetch(url)
     .then(res => res.json())

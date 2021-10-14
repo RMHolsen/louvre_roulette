@@ -1,17 +1,23 @@
 import React from 'react'
 import GalleryInput from '../components/GalleryInput'
-import GalleryShow from '../components/GalleryShow'
+// create gallery form 
+import GalleriesShow from '../components/GalleriesShow'
+// index of galleries 
+import { fetchGalleries } from '../actions/FetchGalleries'
+// fetches back-end data for index of galleries 
 import { connect } from 'react-redux'
-import { fetchGallery } from '../actions/FetchGallery'
-
-// don't forget to import into the app file
+// gives us access to the store 
 
 class GalleryContainer extends React.Component {
+    componentDidMount() {
+        this.props.fetchGalleries()
+    }
+
     render() {
         return(
             <div>
                 <GalleryInput />
-                <Gallery />
+                <GalleriesShow galleries={this.props.galleries}/>
             </div>
         )
     }
@@ -23,4 +29,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, { fetchGallery })(GalleryContainer)
+export default connect(mapStateToProps, { fetchGalleries })(GalleryContainer)

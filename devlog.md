@@ -28,3 +28,6 @@ Filled out Reducer, Fetch, Container, and Show for Gallery, debugged. So much de
 
 ## 15 October 2021
 Cleaned up files, added explanatory comments
+Filled out GalleryInput and AddGallery files to properly receive data and add to database.
+Confirmed GalleryInput and AddGallery properly receives data and adds to database. Removed more user model artifact code.
+BUG HUNT: App isn't refreshing after submit. What gives. 

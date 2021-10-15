@@ -5,6 +5,8 @@ import GalleriesShow from '../components/GalleriesShow'
 // index of galleries 
 import { fetchGalleries } from '../actions/FetchGalleries'
 // fetches back-end data for index of galleries 
+import { addGallery } from '../actions/AddGallery'
+// adds the gallery to the back-end
 import { connect } from 'react-redux'
 // gives us access to the store 
 
@@ -29,4 +31,4 @@ const mapStateToProps = (state) => {
     } // feed the state (galleries: array of galleries) to the props passed down to galleriesshow
 }
 
-export default connect(mapStateToProps, { fetchGalleries })(GalleryContainer)
+export default connect(mapStateToProps, { fetchGalleries, addGallery })(GalleryContainer)

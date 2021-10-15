@@ -1,12 +1,13 @@
 export function fetchGalleries() {
     console.log("Hi. My name is Werner Brandes. My voice is my passport. Verify me.")
+    // test phrase to make sure this component is live
     return (dispatch) => {
         // anonymous function block
         let url = "http://localhost:3000/galleries"
+        // designate the source url
 
         fetch(url)
         .then(res => res.json())
-        // .then(data => console.log(data))
         .then(data => dispatch({ 
             type: 'FETCH_GALLERIES', 
             payload: data }) )

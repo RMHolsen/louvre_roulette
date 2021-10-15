@@ -24,4 +24,7 @@ Confirmed front-end/back-end connection, debugged rack-cors initializer (don't f
 
 ## 14 October 2021
 Added middleware, store to index.js
-Filled out Reducer, Fetch, Container, and Show for Gallery, debugged
+Filled out Reducer, Fetch, Container, and Show for Gallery, debugged. So much debugging for one single underscore.
+
+## 15 October 2021
+Cleaned up files, added explanatory comments

@@ -2,6 +2,7 @@ import React from 'react'
 
 const GalleriesShow = (props) => {
     console.log(props)
+    // making sure the props are correct
 
     return(
         <div className="galleries-list">
@@ -9,11 +10,10 @@ const GalleriesShow = (props) => {
             {props.galleries.map( gallery => <p key={gallery.id}>{gallery.title} - {gallery.description}</p>)} 
         </div>
     )
-    
+    // later there should be links here
+    // but right now props.galleries is the array of gallery objects
+    // and the map function iterates over the array and puts it all in a simple p tag with the key being the id and the text formatting
+    // Title of Gallery - Description of Gallery
 }
 
 export default GalleriesShow
-
-/* The Index bone's connected to the App bone, the App bone's connected to the Container bone, the Container bone's connected to the Fetch bone
-the Fetch bone's connected to the Reducer bone, the Reducer bone's connected to the Show bone
-do NOT forget to proof for underscores, proper quotes, and file names */

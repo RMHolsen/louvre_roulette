@@ -12,7 +12,9 @@ class GalleryInput extends React.Component {
             </form>    
             </div>
         )
-    }
+    } 
+
+    // very simple input form, since gallery only needs two forms of input: a title and a description
 }
 
 export default GalleryInput

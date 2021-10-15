@@ -11,7 +11,7 @@ import { connect } from 'react-redux'
 class GalleryContainer extends React.Component {
     componentDidMount() {
         this.props.fetchGalleries()
-    }
+    } // get the galleries
 
     render() {
         return(
@@ -26,7 +26,7 @@ class GalleryContainer extends React.Component {
 const mapStateToProps = (state) => {
     return {
         galleries: state.galleries 
-    }
+    } // feed the state (galleries: array of galleries) to the props passed down to galleriesshow
 }
 
 export default connect(mapStateToProps, { fetchGalleries })(GalleryContainer)

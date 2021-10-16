@@ -30,4 +30,4 @@ Filled out Reducer, Fetch, Container, and Show for Gallery, debugged. So much de
 Cleaned up files, added explanatory comments
 Filled out GalleryInput and AddGallery files to properly receive data and add to database.
 Confirmed GalleryInput and AddGallery properly receives data and adds to database. Removed more user model artifact code.
-BUG HUNT: App isn't refreshing after submit. What gives. 
+~~BUG HUNT: App isn't refreshing after submit. What gives.~~ BUG SMASH: action was 'ADD_GALLERY in the action file and 'ADD_GALLERIES' in the reducer. This is becoming an issue. 

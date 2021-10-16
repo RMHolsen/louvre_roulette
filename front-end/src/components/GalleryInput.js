@@ -14,25 +14,6 @@ class GalleryInput extends React.Component {
     // setting the initial state in the constructor method with inheriting, via super, the defaults of React.Component
     // and setting the local state (title, description) to empty strings
 
-    render() {
-        return(
-            <div className="gallery-form">
-            <form onSubmit={this.handleSubmit}>
-            <p><input type="text" name="title" placeholder="Title Your Gallery" value={this.state.title} onChange={this.handleChange} /></p>
-            <p><input type="text" name="description" placeholder="Describe Your Gallery" value={this.state.description} onChange={this.handleChange} /></p>
-            <input type="submit" />
-            </form>    
-            </div>
-        )
-    } 
-    // very simple input form, since gallery only needs two forms of input: a title and a description
-    // with just the render-return-input form it is an "uncontrolled" form, meaning it just floats in the dom and doesn't put the data anywhere
-    // type=text: tells it what type of input to look for?
-    // name=title/description: the key for both the state and the back-end data. this plus value makes it a controlled form
-    // placeholder: aesthetic
-    // value: connects the form to the state by making the value of the field, i.e. what is passed to the back end as attribute data, the component's state
-    // onChange: change handler
-
     handleChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value
@@ -52,6 +33,26 @@ class GalleryInput extends React.Component {
             description: ''
         }) // reset to blank fields 
     }
+
+    render() {
+        return(
+            <div className="gallery-form">
+            <form onSubmit={this.handleSubmit}>
+            <p><input type="text" name="title" placeholder="Title Your Gallery" value={this.state.title} onChange={this.handleChange} /></p>
+            <p><input type="text" name="description" placeholder="Describe Your Gallery" value={this.state.description} onChange={this.handleChange} /></p>
+            <input type="submit" />
+            </form>    
+            </div>
+        )
+    } 
+    // very simple input form, since gallery only needs two forms of input: a title and a description
+    // with just the render-return-input form it is an "uncontrolled" form, meaning it just floats in the dom and doesn't put the data anywhere
+    // type=text: tells it what type of input to look for?
+    // name=title/description: the key for both the state and the back-end data. this plus value makes it a controlled form
+    // placeholder: aesthetic
+    // value: connects the form to the state by making the value of the field, i.e. what is passed to the back end as attribute data, the component's state
+    // onChange: change handler
+
 }
 
 export default connect(null, { addGallery })(GalleryInput)

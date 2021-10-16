@@ -31,3 +31,9 @@ Cleaned up files, added explanatory comments
 Filled out GalleryInput and AddGallery files to properly receive data and add to database.
 Confirmed GalleryInput and AddGallery properly receives data and adds to database. Removed more user model artifact code.
 ~~BUG HUNT: App isn't refreshing after submit. What gives.~~ BUG SMASH: action was 'ADD_GALLERY in the action file and 'ADD_GALLERIES' in the reducer. This is becoming an issue. 
+
+## 16 October 2021
+Set up Gallery Show page for individual galleries, refactored individual gallery display to Gallery Show page, confirmed functionality
+Set up React Router 
+Set up routes for Galleries Show-All, Gallery Show, and Gallery Input
+BUG SMASHED: Okay. Okay, this is fine, turns out that with the React tools I'm required to use it just doesn't fucking work in Firefox. This is fine. I do not have the patience to make it work in Firefox right now. Testing in Chrome from here on out. 

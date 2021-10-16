@@ -9,6 +9,9 @@ import { addGallery } from '../actions/AddGallery'
 // adds the gallery to the back-end
 import { connect } from 'react-redux'
 // gives us access to the store 
+import { Route } from 'react-router-dom'
+import GalleryShow from '../components/GalleryShow'
+// gives us access to routes
 
 class GalleryContainer extends React.Component {
     componentDidMount() {
@@ -18,8 +21,21 @@ class GalleryContainer extends React.Component {
     render() {
         return(
             <div>
-                <GalleryInput />
-                <GalleriesShow galleries={this.props.galleries}/>
+                <Route path='/galleries/new' component={GalleryInput} />
+                {/* /galleries/new renders both the input and the show all components because it involves the /galleries/ path 
+                If you want just the input form you need to have the input path not involve /galleries/
+                OR you can use 'exact path' on the GalleriesShow route
+                HOWEVER for this particular app it'd probably be useful to have the existing galleries showing under the input form anyway
+                so the user has an idea of what they have already and do they really need to make a whole new gallery. */}
+
+                <Route path='/galleries/:id' render={(routerProps) => <GalleryShow {...routerProps} galleries={this.props.galleries} /> } />
+                {/* Router props adds built in props that come with using 'component'; the relevant ones here are path and url
+                path = '/galleries/:id' and url = '/galleries/1' */}
+                
+                <Route path='/galleries' render={(routerProps) => <GalleriesShow {...routerProps} galleries={this.props.galleries}/>}/>
+                {/* Whatever is in here will display when the gallery container (within the app) is loaded
+                BUT if it's in a Route tag it will only show up when that route is accessed
+                BUT everything else not wrapped in a Route tag will also show up because it's all within the Gallery container */}
             </div>
         )
     }

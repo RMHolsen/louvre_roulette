@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, compose } from 'redux';
 // functions built into redux to make our life easier. allegedly.
 import thunk from 'redux-thunk'
+import { BrowserRouter as Router } from 'react-router-dom'
+// enables links and routing within the app (when <App> is wrapped in <Router>)
 import { Provider } from 'react-redux'
 import GalleriesReducer from './reducers/GalleriesReducer';
 import './index.css';
@@ -15,7 +17,9 @@ let store = createStore(GalleriesReducer, composeEnhancers(applyMiddleware(thunk
 
 ReactDOM.render(
 <Provider store={store}>
-<App />
+    <Router>
+        <App />
+    </Router>
 </Provider>, 
 document.getElementById('root')
 );

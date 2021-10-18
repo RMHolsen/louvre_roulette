@@ -37,3 +37,7 @@ Set up Gallery Show page for individual galleries, refactored individual gallery
 Set up React Router 
 Set up routes for Galleries Show-All, Gallery Show, and Gallery Input
 BUG SMASHED: Okay. Okay, this is fine, turns out that with the React tools I'm required to use it just doesn't fucking work in Firefox. This is fine. I do not have the patience to make it work in Firefox right now. Testing in Chrome from here on out. 
+
+## 18 October 2021
+Set up links in the Galleries show page 
+Noted a potential problem in the Gallery show page (see project notes)

@@ -31,6 +31,11 @@
     -- are functions
     -- import connect from react-redux into app component
 16. Create Components/Containers - Gallery and Gallery Input receive and display data (write and show components) and Gallery Container wraps them both, which App then wraps itself. The toe bone connected to the foot bone, the foot bone connected to the ankle bone. Dem bones dem bones. 
+17. See devlog for further developments I guess (here ends the import from the practice session)
+
+## To-Do
+-- Find a better way to locate the gallery item in the galleries array in Gallery Show. Probably with title matching, but still. 
+-- ... if you're doing title matching it's going to have to involve uniqueness in the validations. argh.
 
 ## Requirements
 -- The code should be written in ES6 as much as possible

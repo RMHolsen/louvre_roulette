@@ -41,3 +41,6 @@ BUG SMASHED: Okay. Okay, this is fine, turns out that with the React tools I'm r
 ## 18 October 2021
 Set up links in the Galleries show page 
 Noted a potential problem in the Gallery show page (see project notes)
+Added Switch to Gallery Container
+Confirmed index.css is where the styling goes (don't forget to take down the hot pink, nobody will thank you for that)
+Began integrating Artwork components into app, pushed

@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
-#gallery-list { 
+.galleries-list { 
   background-color: hotpink;
+}
+
+.artwork-list { 
+  background-color: cyan;
 }

@@ -11,7 +11,7 @@ import { addGallery } from '../actions/AddGallery'
 // adds the gallery to the back-end
 import { connect } from 'react-redux'
 // gives us access to the store 
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 // gives us access to routes
 
 class GalleryContainer extends React.Component {
@@ -22,6 +22,7 @@ class GalleryContainer extends React.Component {
     render() {
         return(
             <div>
+                <Switch>
                 <Route path='/galleries/new' component={GalleryInput} />
                 {/* /galleries/new renders both the input and the show all components because it involves the /galleries/ path 
                 If you want just the input form you need to have the input path not involve /galleries/
@@ -33,6 +34,7 @@ class GalleryContainer extends React.Component {
                 
                 <Route exact path='/galleries' render={(routerProps) => <GalleriesShow {...routerProps} galleries={this.props.galleries}/>}/>
                 {/* Again, using 'exact path' means the galleries/GalleriesShow code only runs if the exact path is given */}
+                </Switch>
             </div>
 
             /* Whatever is in here will display when the gallery container (within the app) is loaded

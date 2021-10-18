@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
-import GalleryShow from './GalleryShow'
+// import GalleryShow from './GalleryShow'
 
 const GalleriesShow = (props) => {
     console.log(props)

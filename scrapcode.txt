@@ -1,4 +1,12 @@
-
+    let gallery = props.galleries[props.match.params.id - 1]
+    let test_gallery = props.galleries.filter(gallery => gallery.id === props.match.params.id)
+    let test_two = props.galleries.find(gallery => gallery.id == props.match.params.id)
+    let test_three = props.galleries.filter(gallery => gallery.id == props.match.params.id)
+    
+    console.log(gallery)
+    console.log(test_gallery) // returns nothing
+    console.log(test_two) // returns same as initial
+    console.log(test_three) // returns array with one object, top
 
 
 ## EXPORTED FROM APP.JS

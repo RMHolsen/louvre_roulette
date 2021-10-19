@@ -34,8 +34,9 @@
 17. See devlog for further developments I guess (here ends the import from the practice session)
 
 ## To-Do
--- Find a better way to locate the gallery item in the galleries array in Gallery Show. Probably with title matching, but still. 
--- ... if you're doing title matching it's going to have to involve uniqueness in the validations. argh.
+~~-- Find a better way to locate the gallery item in the galleries array in Gallery Show. Probably with title matching, but still. ~~
+~~-- ... if you're doing title matching it's going to have to involve uniqueness in the validations. argh.~~
+-- Not title matching! Careful use of the 'find' method. >.<
 
 ## Requirements
 -- The code should be written in ES6 as much as possible

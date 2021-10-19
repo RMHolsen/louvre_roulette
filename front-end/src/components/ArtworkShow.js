@@ -4,7 +4,11 @@ const ArtworkShow = (props) => {
     return(
         <div className="artwork-list">
             Artwork Component 
-            {/* props.artworks.map(artwork => whatever JSX/HTML styling you want to go here */}
+            {props.artworks && props.artworks.map(artwork => 
+                <p key={artwork.id}>
+                    <strong>{artwork.title}</strong><br/>
+                    <em>{artwork.medium} {artwork.style}</em><br/>
+                </p>)}
         </div>
     )
 }

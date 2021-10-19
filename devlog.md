@@ -48,3 +48,5 @@ Began integrating Artwork components into app, pushed
 ## 19 October 2021
 (Okay, some things do work in Firefox, so... IDK)
 Fixed the potential problem in Gallery show page! 
+BUG SMASH: Fixed the problem with the gallery.artworks property not showing up at all ever. Turns out FastJSONApi is not actually the serializer we need for this. Used Active Model Serializer instead. (FastJSON remains commented out in the gemfile as a lesson to Future Me.)
+Added Artworks to Gallery Show page 

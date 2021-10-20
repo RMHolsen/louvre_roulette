@@ -40,6 +40,7 @@ class ArtworksController < ApplicationController
 
     def destroy 
         @artwork.destroy 
+        render json: @gallery
     end 
 
     private 

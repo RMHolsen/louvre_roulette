@@ -11,11 +11,17 @@ class ArtworksController < ApplicationController
     # end 
 
     def create 
-        @artwork = Artwork.new(artwork_params)
+        @artwork = @gallery.artworks.new(artwork_params)
         if @artwork.valid?
             # Remember, you need validations for this to kick  
             @artwork.save 
-            render json: @artwork 
+            render json: @gallery
+            # Because artwork not only belongs to gallery but is also nested in gallery
+            # If we create an artwork this way (and because the gallery is already set thanks to before_action :set_gallery)
+            # (because artwork is nested)
+            # And we render the json for the _gallery_ instead of the artwork
+            # The json for the artwork is already there in the reducer payload in the front end
+            # And things become a lot less convoluted over there
         else 
             # Ah ah ah! You didn't say the magic word!
             render json: { error: 'Ah ah ah! You didn\'t say the magic word!' }

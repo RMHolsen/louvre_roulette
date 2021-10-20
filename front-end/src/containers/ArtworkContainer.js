@@ -5,18 +5,13 @@ import ArtworkShow from '../components/ArtworkShow'
 // index of art in this gallery, remember its' nested
 // import { connect } from 'react-redux'
 // // gives us access to the store
-// import { fetchArtwork } from '../actions/FetchArtwork'
-// // fetches back-end data for index of art for this gallery
 
 class ArtworkContainer extends React.Component {
-    // componentDidMount() {
-    //     this.props.fetchArtwork()
-    // } // get the artwork
 
     render() {
         return(
             <div>ArtworkContainer
-                 <ArtworkInput />
+                 <ArtworkInput gallery={this.props.gallery}/>
                  <ArtworkShow artworks={this.props.gallery && this.props.gallery.artworks}/>
              
     </div>

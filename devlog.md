@@ -53,3 +53,6 @@ Added Artworks to Gallery Show page
 Filled out Artwork Input and AddArtwork files, verified functionality of adding an artwork to a gallery
 
 ## 20 October 2021
+Added delete function, tested (21 Oct 2021), confirmed
+
+## 21 October 2021

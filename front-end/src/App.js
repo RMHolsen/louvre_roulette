@@ -12,8 +12,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div id="App">
         <GalleryContainer />
+        <br />
+        <br />
+        <p id="Credits">This page styled in the fashion of John Cage's "4'33".</p>
       </div>
     )
   }

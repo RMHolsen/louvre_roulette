@@ -21,7 +21,7 @@ class GalleryContainer extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="gallery-container">
                 <Switch>
                 <Route path='/galleries/new' component={GalleryInput} />
                 {/* /galleries/new renders both the input and the show all components because it involves the /galleries/ path 

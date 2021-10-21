@@ -22,11 +22,26 @@ body {
   }
 
   #Credits {
-      font-size: x-small;
+    font-size: x-small;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .Intro {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gallery-container {
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
-  /* .galleries-list { 
+  /* .galleries-list, .artwork-list, .art-box, .gallery-box { 
+    padding-left: 30px;
   }
-  
-  .artwork-list { 
+
+  #art-form, #gallery-form {
+    padding-left: 30px;
+   
   } */

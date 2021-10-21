@@ -3,14 +3,12 @@ import ArtworkInput from '../components/ArtworkInput'
 // create artwork form
 import ArtworkShow from '../components/ArtworkShow'
 // index of art in this gallery, remember its' nested
-// import { connect } from 'react-redux'
-// // gives us access to the store
 
 class ArtworkContainer extends React.Component {
 
     render() {
         return(
-            <div>ArtworkContainer
+            <div>
                  <ArtworkInput gallery={this.props.gallery}/>
                  <ArtworkShow artworks={this.props.gallery && this.props.gallery.artworks}/>
              

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Route, Link } from 'react-router-dom'
 import GalleryContainer from './containers/GalleryContainer';
 
 class App extends Component {
@@ -13,10 +14,15 @@ class App extends Component {
   render() {
     return (
       <div id="App">
+        <p className="Intro">Welcome to the Faux Louvre, where the points are made up and the art doesn't matter. Here you will find, not an index of art because graphics are large and the server is tiny, but an index of descriptive terms of art with a URL you can look up at your convenience. If that seems like a foolish idea of a gallery to you, I invite you to consider the NFT.</p>
+        <p className="Intro">(On a slightly more serious note, there was a certain amount of scope creep and scope shift while working on this project, but since I'm working to a school deadline rather than to a project deadline that I have to deliver, this will be placeholder text until such time as I can redesign this project.)</p>
+        <p className="Intro"><Link to="/galleries/">To the Galleries!</Link></p>
+        <p className="Intro"><Link to="/galleries/new">Add a Gallery!</Link></p>
+        <br />
+
         <GalleryContainer />
         <br />
         <br />
-        <p id="Credits">This page styled in the fashion of John Cage's "4'33".</p>
       </div>
     )
   }

@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 // enables links and routing within the app (when <App> is wrapped in <Router>)
 import { Provider } from 'react-redux'
 import GalleriesReducer from './reducers/GalleriesReducer';
-import './index.css';
+import './johncage.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
@@ -19,6 +19,10 @@ ReactDOM.render(
 <Provider store={store}>
     <Router>
         <App />
+        <br />
+        <br />
+        <p id="Credits">This page styled in the fashion of John Cage's "4'33".<br />
+        Look, I'm easily amused and also a nerd.</p>
     </Router>
 </Provider>, 
 document.getElementById('root')

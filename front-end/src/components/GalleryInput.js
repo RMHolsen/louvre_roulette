@@ -36,7 +36,7 @@ class GalleryInput extends React.Component {
 
     render() {
         return(
-            <div className="gallery-form">
+            <div id="gallery-form">
             <form onSubmit={this.handleSubmit}>
             <p><input type="text" name="title" placeholder="Title Your Gallery" value={this.state.title} onChange={this.handleChange} /></p>
             <p><input type="text" name="description" placeholder="Describe Your Gallery" value={this.state.description} onChange={this.handleChange} /></p>

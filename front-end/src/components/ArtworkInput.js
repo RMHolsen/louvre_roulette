@@ -32,7 +32,7 @@ class ArtworkInput extends React.Component {
 
     render() {
         return(
-            <div>
+            <div id="art-form">
                 <form onSubmit={this.handleSubmit}>
                 <p><strong>Title:</strong><input type="text" name="title" value={this.state.title} placeholder="Title Your Artwork" onChange={this.handleChange}/></p>
                 {/* 

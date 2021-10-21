@@ -16,7 +16,7 @@ const GalleriesShow = (props) => {
             Iterating over all the galleries, rendering each gallery information as a GalleryShow component within the GalleriesShow component */}
 
             {props.galleries.map(gallery => <div key={gallery.id}>
-                <Link to={`/galleries/${gallery.id}`}>{gallery.title}</Link>
+                <p><Link to={`/galleries/${gallery.id}`}>{gallery.title}</Link></p>
             </div>)}
             {/* Iterating over all the galleries, rendering a link to each GalleryShow component
             That path syntax is excessively complicated */}

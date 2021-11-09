@@ -1,3 +1,41 @@
+## To-Do
+
+## Stretch Goals
+Add users and user login function (web tokens!)
+Do I want to do anything with the artwork attributes, change how they're displayed or chosen, etc. 
+
+## Architecture
+gallery has_many :artworks
+artwork belongs_to :gallery
+gallery belongs_to :user
+user has_many :galleries
+user has_many artworks, through: :galleries
+
+user
+    t.string :username
+    t.string :password_digest 
+    t.text :profile
+    t.string :display_name
+gallery
+    t.string :name 
+    t.string :description 
+    t.belongs_to :user 
+work
+    t.string :title
+    t.string :medium
+    t.string :style 
+    t.string :subject
+    t.string :url
+    t.belongs_to :gallery
+    
+
+The Index bone's connected to the App bone, the App bone's connected to the Container bone, the Container bone's connected to the Fetch bone
+the Fetch bone's connected to the Reducer bone, the Reducer bone's connected to the Show bone
+do NOT forget to proof for underscores, proper quotes, and file names 
+
+## Bugs
+
+## Notes
 ## **DO NOT FORGET TO ADD 1.3.6 TO YOUR SQLITE VERSION ARGH.**
 1. create-react-app command in super-directory
     -- mkdir project-name in the projects folder
@@ -33,49 +71,15 @@
 16. Create Components/Containers - Gallery and Gallery Input receive and display data (write and show components) and Gallery Container wraps them both, which App then wraps itself. The toe bone connected to the foot bone, the foot bone connected to the ankle bone. Dem bones dem bones. 
 17. See devlog for further developments I guess (here ends the import from the practice session)
 
-## To-Do
-~~-- Find a better way to locate the gallery item in the galleries array in Gallery Show. Probably with title matching, but still. ~~
-~~-- ... if you're doing title matching it's going to have to involve uniqueness in the validations. argh.~~
--- Not title matching! Careful use of the 'find' method. >.<
-
 ## Requirements
 -- The code should be written in ES6 as much as possible
 Use--  the create-react-app generator to start your project. (Follow the instructions on this repo to setup the generator: create-react-app) DONE
 -- Your app should have one HTML page to render your react-redux application (I guess?)
--- There should be 5 stateless components (Gallery: Add, Fetch, Show, Reducer)
--- There should be 3 routes (/galleries, /gallery_id, /gallery_id/artwork ?)
--- The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate docs (Links to an external site.); docs for v4 can be found here (Links to an external site.))
+-- There should be 5 stateless components (Gallery: Add, Fetch, Show, Reducer, Artwork: Show, Add, Fetch, Delete) DONE
+-- There should be 3 routes (/galleries, /gallery/new, /gallery_id) DONE
+-- The Application must make use of react-router and proper RESTful routing (should you choose to use react-router v3 please refer to the appropriate docs (Links to an external site.); docs for v4 can be found here (Links to an external site.)) DONE
 -- Use Redux middleware to respond to and modify state change DONE
 -- Make use of async actions and redux-thunk middleware to send data to and receive data from a server DONE
 -- Your Rails API should handle the data persistence with a database. You should be using fetch() within your actions to GET and POST data from your API - do not use jQuery methods. DONE
 -- Your client-side application should handle the display of data with minimal data manipulation SURE WHY NOT
 -- Your application should have some minimal styling: feel free to stick to a framework (like react-bootstrap), but if you want to write (additional) CSS yourself, go for it! OH COME ON THAT'S THE EASY PART
-
-## Architecture
-gallery has_many :artworks
-artwork belongs_to :gallery
-gallery belongs_to :user
-user has_many :galleries
-user has_many artworks, through: :galleries
-
-user
-    t.string :username
-    t.string :password_digest 
-    t.text :profile
-    t.string :display_name
-gallery
-    t.string :name 
-    t.string :description 
-    t.belongs_to :user 
-work
-    t.string :title
-    t.string :medium
-    t.string :style 
-    t.string :subject
-    t.string :url
-    t.belongs_to :gallery
-    
-
-The Index bone's connected to the App bone, the App bone's connected to the Container bone, the Container bone's connected to the Fetch bone
-the Fetch bone's connected to the Reducer bone, the Reducer bone's connected to the Show bone
-do NOT forget to proof for underscores, proper quotes, and file names 

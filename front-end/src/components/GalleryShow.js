@@ -1,5 +1,4 @@
 import React from 'react'
-// import { Redirect } from 'react-redux-dom'
 import ArtworkContainer from '../containers/ArtworkContainer'
 
 const GalleryShow = (props) => {

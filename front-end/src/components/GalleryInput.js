@@ -21,6 +21,8 @@ class GalleryInput extends React.Component {
             // title: e.target.value,
             // description: e.target.value
         }) // update the state with each keystroke; without the onChange/change handler it would be a static read-only form
+        // set state is asynchronous so it will always be a beat behind
+        // console.log(this.state.title) <-- demonstrates
     }
 
     handleSubmit = (e) => {

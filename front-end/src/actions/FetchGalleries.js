@@ -15,6 +15,7 @@ export function fetchGalleries() {
         // i.e. the json from @galleries = Gallery.all in this case
     }
 }
+// thunk allows us to render the data not in real time because 
 
 /* The Index bone's connected to the App bone, the App bone's connected to the Container bone, the Container bone's connected to the Fetch bone
 the Fetch bone's connected to the Reducer bone, the Reducer bone's connected to the Show bone

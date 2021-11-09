@@ -3,6 +3,9 @@ export default function GalleriesReducer(state = { galleries: [], }, action) {
     switch(action.type) {
         case 'FETCH_GALLERIES':
             return {galleries: action.payload};
+            // state.galleries = action.payload
+            // needs both explicit return and better practice not to directly mutate state
+            // (although, see also Redux Toolkit)
         case 'ADD_GALLERY':
             console.log(action.payload)
             return {...state, galleries: [...state.galleries, action.payload]}

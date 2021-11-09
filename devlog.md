@@ -56,3 +56,22 @@ Filled out Artwork Input and AddArtwork files, verified functionality of adding 
 Added delete function, tested (21 Oct 2021), confirmed
 
 ## 21 October 2021
+Added copious styling, a la John Cage 4'33. 
+
+## 27 October 2021
+TO-DO: Review arrow function differences, longhand ways of using arrow function context, binding, apply, explicit vs implicit returns
+TO-DO: Review Virtual-DOM: How react determines what to re-render, state updates, reconciliation, comparison (virtual-DOM is faster to update than DOM), re-render the differences. (This is similar to the minimal gifs protocols in Web 1.0, remember; Virtual-DOM streamlines for fast rendering)
+TO-DO: Review JSON web tokens (try implementing)
+Live-coding portion: 12:45 EST Fri 29 October (state, local state, events, update the DOM, review array JS methods (especially syntax! it's not the same as Rails!) just using React) Local state is the state in the component. setState works asynchronously, it gets put into the queue and then the app gets to it when it gets to it. 
+Updating the dom: 
+1. The JSX renders
+2. VirtualDOM is updated
+3. VirtualDOM is compared (like comparing in side by side windows)
+4. Changed objects are updated
+5. The actual DOM in the screen is changed
+
+Review array and sort and concat in JS
+Practice state manipulations
+
+## 9 Nov 2021 
+Updated Readme, standardized Project Notes 

@@ -60,8 +60,6 @@ class ArtworkInput extends React.Component {
             </div>
         )
     } 
-    
-    // more complex form, since artwork carries a lot of attributes
 }
 
 export default connect(null, { addArtwork })(ArtworkInput)

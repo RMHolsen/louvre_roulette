@@ -30,7 +30,8 @@ class GalleryContainer extends React.Component {
 
                 <Route path='/galleries/:id' render={(routerProps) => <GalleryShow {...routerProps} galleries={this.props.galleries} /> } />
                 {/* Router props adds built in props that come with using 'component' or 'render'; the relevant ones here are path and url
-                path = '/galleries/:id' and url = '/galleries/1' */}
+                path = '/galleries/:id' and url = '/galleries/1' 
+                Do NOT forget the /:id /new issue */}
                 
                 <Route exact path='/galleries' render={(routerProps) => <GalleriesShow {...routerProps} galleries={this.props.galleries}/>}/>
                 {/* Again, using 'exact path' means the galleries/GalleriesShow code only runs if the exact path is given */}
@@ -51,3 +52,4 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, { fetchGalleries, addGallery })(GalleryContainer)
+// ... in hindsight, not entirely sure I need addGallery in here, but it's staying in until after demonstration

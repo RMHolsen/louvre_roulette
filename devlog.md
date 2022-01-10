@@ -75,3 +75,6 @@ Practice state manipulations
 
 ## 9 Nov 2021 
 Updated Readme, standardized Project Notes 
+
+## 9 Jan 2022
+Deleted some cruft from React code challenges
